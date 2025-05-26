@@ -1,0 +1,214 @@
+/* Global import */
+@import url(./reset.css);
+
+/* ============== 
+   Menu toggle
+=================*/
+/* ============== 
+  header
+=================*/
+
+#menuToggle-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   /* border: 1px solid green; */
+}
+
+#brand {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   /* border: 1px solid red; */
+}
+
+.logo-img {
+   width: 100px;
+   height: 50px;
+   border: none;
+}
+
+h1 {
+   text-decoration: none;
+   font-size: 70px;
+   font-weight: 700;
+   color: blue;
+   margin-top: -15px;
+}
+
+a {
+   text-decoration: none;
+}
+
+.togglehead {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100px;
+   /* gap: 10px; */
+   /* border: 1px solid peru; */
+}
+
+
+#sellBox {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 100px;
+   height: 70px;
+   /* border: 1px solid palevioletred; */
+}
+
+.sellArt {
+   display: none;
+}
+
+.loginTap {
+   display: none;
+}
+
+.signupTap {
+   display: none;
+}
+
+#sellBox a {
+   text-decoration: none;
+   font-size: 17px;
+   font-weight: 400px;
+}
+
+.love-img {
+   width: 20px;
+   height: 20px;
+}
+
+/* ============== 
+   End of header
+=================*/
+
+
+/* ============== 
+     menu
+=================*/
+.menuBox {
+   position: absolute;
+   height: 420px;
+   top: 0;
+   border: 1px solid blue;
+   width: 30%;
+   z-index: 2;
+   background-color: red;
+   transform: translateX(-120%);
+   transition: transform 0.5s ease-in-out;
+}
+
+.menuBox.show {
+   transform: translateX(0);
+}
+
+.menuBox ul li {
+   display: flex;
+   flex-direction: column;
+}
+
+.menuBox ul li a {
+   text-align: center;
+   font-size: 20px;
+   color: white;
+   margin-bottom: 10px;
+}
+
+
+.menuBox h3 {
+   text-align: center;
+   font-size: 20px;
+   color: white;
+}
+
+.menuBox p {
+   text-align: center;
+   font-size: 15px;
+   color: white;
+   margin-bottom: 20px;
+}
+
+.menuBox a {
+   text-align: center;
+   font-size: 20px;
+}
+
+
+.menu-bar div {
+   height: 1px;
+   width: 50px;
+   margin-block: 6px;
+   background: black;
+}
+
+/* ============== 
+   End of menu
+=================*/
+
+/* ============== 
+   SearchPiont
+=================*/
+#searchPoint {
+   width: 800px;
+   height: 70px;
+   margin-top: 10px !important;
+   margin: auto;
+
+}
+
+.text {
+   float: left;
+   background: white url(../assets/images/search-icon-front-side-white-background.jpg) right center no-repeat;
+   width: 800px;
+   height: 70px;
+   font-size: 20px;
+   color: blueviolet;
+   padding: 20px 20px 20px 20px;
+   border-radius: 10px;
+   /* border: 1px solid rgb(223, 216, 21); */
+}
+
+.text::placeholder {
+   color: tomato;
+}
+
+
+
+
+/* ====================
+   End of searchPiont
+=======================*/
+@media screen and (max-width: 768px) {
+   .menu-bar {
+      width: 50px;
+   }
+
+   .logo-img {
+      width: 100px;
+      object-fit: contain;
+   }
+
+   #brand h1 {
+      display: none;
+   }
+
+   #searchPoint {
+      width: 280px;
+      margin-left: 0;
+      margin: auto;
+   }
+
+   .text {
+      font-size: 15px;
+      width: 280px;
+   }
+}
+
+/* ================= 
+End of menu toggle
+====================*/

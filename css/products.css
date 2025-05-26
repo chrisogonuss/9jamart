@@ -1,0 +1,84 @@
+@import url(./reset.css);
+
+/*===============
+  section2 
+=================*/
+
+.section2brand {
+  justify-content: center;
+  margin: 50px 20px 0 20px;
+}
+
+.section2-brand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px 30px;
+}
+
+.section2brand h2 {
+  font-size: 25px;
+  width: fit-content;
+  height: fit-content;
+  color: black;
+  margin-left: 70px;
+  margin-bottom: 20px;
+  border: 1px solid red;
+}
+
+.section2-brand1,
+.section2-brand2,
+.section2-brand3,
+.section2-brand4,
+.section2-brand5,
+.section2-brand6,
+.section2-brand7,
+.section2-brand8,
+.section2-brand9,
+.section2-brand10 {
+  width: 210px;
+  border: 1px solid red;
+}
+
+.section2-brand-p1 {
+  font-size: 14px;
+  width: fit-content;
+  padding: 0 5px;
+  margin-bottom: 5px;
+  color: white;
+  background: green;
+  border: 1px solid blue;
+}
+
+.section2-brand-p2 {
+  font-size: 14px;
+  width: fit-content;
+  padding: 0 5px;
+  background: rgb(255, 196, 0);
+  border: 1px solid blue;
+  margin-bottom: 5px;
+}
+
+.section2-brand-p3,
+.section2-brand-p4,
+.section2-brand-p5,
+.section2-brand-p6 {
+  font-size: 13px;
+  width: fit-content;
+  padding: 0 5px;
+  border: 1px solid blue;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.section2-img {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: auto !important;
+}
+
+/*===============
+  end of section2 
+=================*/

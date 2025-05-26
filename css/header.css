@@ -1,0 +1,283 @@
+@import url(./reset.css);
+@import url(./menu.css);
+@import url(./menutoggle.css);
+
+/* ============== 
+  header
+=================*/
+#header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  gap: 50px;
+  padding: 10px;
+  /* border: 1px solid peru; */
+}
+
+#brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 100px;
+  height: 50px;
+  border: none;
+}
+
+#header .logo-img {
+  padding-left: 10px;
+}
+
+h1 {
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 700;
+  color: blue;
+  margin-left: 10px;
+  margin-top: -15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#searchBox {
+  width: 400px;
+  height: 70px;
+  /* padding: 0px 20px 0 20px; */
+  /* background-color: red; */
+}
+
+.text {
+  float: left;
+  background: white url(../assets/images/search-icon-front-side-white-background.jpg) right center no-repeat;
+  width: 400px;
+  height: 70px;
+  font-size: 20px;
+  color: blueviolet;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+  /* border: 1px solid rgb(223, 216, 21); */
+}
+
+.text::placeholder {
+  color: tomato;
+}
+
+#header #sellBox {
+  padding-right: 10px;
+}
+
+
+#sellBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 70px;
+  /* border: 1px solid palevioletred; */
+}
+
+#sellBox a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400px;
+  color: blue;
+}
+
+.header-toggle {
+  display: none;
+}
+
+
+
+
+/* -------------------------- */
+
+.sub-list>div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.link-list {
+  position: relative;
+  height: fit-content;
+  background-color: white;
+}
+
+.sub-list {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  top: calc(100% + 12px);
+  width: 220px;
+  padding: 20px 20px;
+  height: fit-content;
+  background-color: white;
+  z-index: 2;
+}
+
+
+.link-list::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  height: 15px;
+  /* z-index: 2; */
+}
+
+.link-list::after {
+  content: "";
+  position: absolute;
+  bottom: -17px;
+  background-color: blue;
+  height: 10px;
+  width: 10px;
+  transform: rotateZ(45deg);
+  margin-inline: auto;
+  opacity: 0
+}
+
+.link-show.link-list::after {
+  opacity: 1;
+}
+
+.sub-list.show-list.shift-left,
+.sub-list.show-list {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+.header-toggle {
+  display: none;
+}
+
+
+/* ============== 
+   End of header
+=================*/
+
+/* ============== 
+   header @media
+=================*/
+@media screen and (max-width: 767px) {
+  .header-toggle {
+    padding-inline: 10px;
+  }
+
+  .menu-bar {
+    width: 50px;
+  }
+
+  .logo-img {
+    width: 100px;
+    object-fit: contain;
+  }
+
+  #brand h1 {
+    display: none;
+  }
+
+  #searchPoint {
+    width: 280px;
+    margin-left: 0;
+    margin: auto;
+  }
+
+  .text {
+    font-size: 15px;
+    width: 280px;
+  }
+
+  .header-toggle {
+    display: block;
+  }
+
+  #header {
+    display: none;
+  }
+
+  #menucontainer {
+    display: none;
+  }
+
+  .togglehead {
+    display: flex;
+    width: 100px;
+    padding-inline: 10px;
+    /* border: 1px solid blue; */
+  }
+
+  .viewCart-img {
+    /* margin-left: 5px; */
+  }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header-toggle {
+    padding: 10px 20px;
+  }
+
+  .menu-bar>div {
+    width: 100px;
+  }
+
+  .logo-img {
+    width: 200px;
+    object-fit: contain;
+    margin-left: 120px;
+  }
+
+  #brand h1 {
+    display: none;
+  }
+
+  #searchPoint {
+    width: 400px;
+    margin-left: 0;
+    margin: auto;
+  }
+
+  .text {
+    font-size: 24px;
+    width: 400px;
+  }
+
+  .header-toggle {
+    display: block;
+  }
+
+  #header {
+    display: none;
+  }
+
+  #menucontainer {
+    display: none;
+  }
+
+  .togglehead {
+    display: flex;
+    width: 200px;
+    padding: 0 10px;
+    /* border: 1px solid blue; */
+  }
+
+
+  .yourList-img,
+  .viewCart-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* ======================
+   End of header @media
+=========================*/

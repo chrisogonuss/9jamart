@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Toggle</title>
+  <!-- style css -->
+  <link rel="stylesheet" href="./css/menutoggle.css">
+</head>
+
+<body>
+  <nav id="container">
+    <div id="menuToggle-container">
+      <!-- menu toggle -->
+      <div class="menu-bar">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div id="brand">
+        <a href=""><img src="./assets/logo.svg/download-removebg-preview.png" alt="9jamart" class="img logo-img"></a>
+        <a href="">
+          <h1>9jamart</h1>
+        </a>
+      </div>
+
+      <div class="togglehead">
+        <div id="sellBox">
+          <div class="sellArt">
+            <a href="sellYourArt.html">Sell your art</a>
+          </div> <br>
+
+          <div class="loginTap">
+            <a href="login.html">Login</a>
+          </div> <br>
+
+          <div class="signupTap">
+            <a href="signup.html">Signup</a>
+          </div> <br>
+
+          <div>
+            <a href="yourList.html"><img src="./assets/images/Screenshot__71_-removebg-preview.png" alt=""
+                class="love-img yourList-img"></a>
+          </div> <br>
+
+          <div>
+            <a href="viewCart.html"><img src="./assets/images/Screenshot__72_-removebg-preview.png" alt="" class="viewCart-img"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="menuBox">
+        <h3>Hi here!</h3>
+        <p><a href="login.html">Log in</a> or <a href="signup.html">Sign up</a></p>
+        <ul>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="clothing.html">Clothing</a></li>
+          <li><a href="stickers.html">Stickers</a></li>
+          <li><a href="phoneCases.html">Phone Cases</a></li>
+          <li><a href="wallArt.html">Wall Art</a></li>
+          <li><a href="home&living.html">Home & Living</a></li>
+          <li><a href="kids&babies.html">Kids & Babies</a></li>
+          <li><a href="accessories.html">Accessories</a></li>
+          <li><a href="stionery&office.html">Stationry & Office</a></li>
+          <li><a href="giftsForHim.html">Gifts</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="searchPoint">
+      <form method="get">
+        <input type="text" placeholder="search a product or designs" class="text">
+      </form>
+      <!-- End of menu toggle -->
+    </div>
+  </nav>
+
+  <script>
+    const menuBar = document.querySelector(".menu-bar")
+    const navBox = document.querySelector(".menuBox")
+
+    menuBar.addEventListener('click', () => {
+      navBox.classList.toggle("show")
+    })
+  </script>
+
+
+
+</body>
+
+</html>

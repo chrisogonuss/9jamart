@@ -1,0 +1,66 @@
+@import url(./reset.css);
+
+/* footer */
+
+.clear {
+ clear: both;
+}
+
+.footer1 {
+ align-items: center;
+ width: 100%;
+ height: 230px;
+ background: darkblue;
+ background: linear-gradient darkblue;
+ background: -webkit-linear-gradient darkblue;
+ background: -o-linear-gradient darkblue;
+ background: -moz-linear-gradient darkblue;
+ padding: 10px 30px;
+ margin-top: 20px;
+ /* border: 1px solid white; */
+}
+
+.brand {
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ text-align: left;
+}
+
+.brand h1 {
+ text-align: left;
+ font-size: 30px;
+ font-weight: 600;
+ margin-top: 5px;
+ margin-bottom: 10px;
+ color: white;
+}
+
+.brand p {
+ margin-bottom: 15px;
+}
+
+
+.brand p a {
+ text-decoration: none;
+ text-align: center;
+ justify-content: center;
+ font-size: 18px;
+ font-weight: 400;
+ margin-left: 5px;
+ color: whitesmoke;
+}
+
+.brand p a:hover {
+ text-decoration: underline;
+ color: white;
+}
+
+.socila-img {
+ width: 18px;
+ height: 18px;
+ margin-right: 10px;
+ border-radius: 5px;
+}
+
+/* end of footer */
