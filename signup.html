@@ -1,81 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Shop with us</title>
- <!-- style css -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop with us</title>
+  <!-- favicon -->
+  <link rel="icon" href="./assets/favicon.ico/download-removebg-preview.png" type="image/x-icon" />
+  <!-- style css -->
   <link rel="stylesheet" href="./css/form.css">
 </head>
+
 <body>
- <div class="form-flex">
-  <div>
-   <h1>Register with us</h1>
-   <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique esse provident ipsam optio aperiam?
-     Sapiente eum
-     architecto odit aperiam ad laborum quibusdam, ea consequuntur fuga amet, maxime iusto. Beatae,
-     dolor?</small></p>
+  <div class="form-flex">
+    <div>
+      <h1>Register with us</h1>
+      <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique esse provident ipsam optio aperiam?
+          Sapiente eum
+          architecto odit aperiam ad laborum quibusdam, ea consequuntur fuga amet, maxime iusto. Beatae,
+          dolor?</small></p>
+    </div>
+    <div>
+      <form method="post">
+        <div class="form-input">
+          <input type="text" name="name" required placeholder="name" spellcheck="false">
+          <p><small class="error"></small></p>
+        </div>
+
+        <div class="form-input">
+          <input type="text" name="email" required placeholder="Email Address (eg example@gmail.com)">
+          <p><small class="error"></small></p>
+        </div>
+
+        <div class="form-input">
+          <input type="text" name="countryCode" required placeholder="countryCode (eg +234)">
+          <p><small class="error"></small></p>
+        </div>
+
+        <div class="form-input">
+          <input type="text" name="phoneNumber" required placeholder="Tel (eg +2349030456786)">
+          <p><small class="error"></small></p>
+        </div>
+
+        <div class="form-input">
+          <input type="text" name="houseNumber" required placeholder="houseNumber" spellcheck="false">
+          <p><small class="error"></small></p>
+        </div>
+
+        <div class="form-input">
+          <input type="text" name="street" required placeholder="street" spellcheck="false">
+          <p><small class="error"></small></p>
+        </div>
+
+        <div class="form-input">
+          <input type="text" name="stateOfResidence" required placeholder="stateOfResidence" spellcheck="false">
+          <p><small class="error"></small></p>
+        </div>
+
+        <div class="form-input">
+          <input type="text" name="countryOfResidence" required placeholder="countryOfResidence" spellcheck="false">
+          <p><small class="error"></small></p>
+        </div>
+
+        <div class="form-input password-block">
+          <input type="password" name="password" class="password" required placeholder="**********">
+          <button type="button" onclick="togglePassword()">Show</button>
+          <p><small class="error"></small></p>
+        </div>
+
+        <div class="form-input">
+          <input type="checkbox" name="terms-and-conditions">
+          <span>I have read and agreed to the <a href="">Terms and conditions</a></span>
+        </div>
+
+        <div class="form-input">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
   </div>
-  <div>
-   <form method="post">
-    <div class="form-input">
-     <input type="text" name="name" required placeholder="name" spellcheck="false">
-     <p><small class="error"></small></p>
-    </div>
- 
-    <div class="form-input">
-     <input type="text" name="email" required placeholder="Email Address (eg example@gmail.com)">
-     <p><small class="error"></small></p>
-    </div>
- 
-    <div class="form-input">
-     <input type="text" name="countryCode" required placeholder="countryCode (eg +234)">
-     <p><small class="error"></small></p>
-    </div>
- 
-    <div class="form-input">
-     <input type="text" name="phoneNumber" required placeholder="Tel (eg +2349030456786)">
-     <p><small class="error"></small></p>
-    </div>
- 
-    <div class="form-input">
-     <input type="text" name="houseNumber" required placeholder="houseNumber" spellcheck="false">
-     <p><small class="error"></small></p>
-    </div>
 
-    <div class="form-input">
-     <input type="text" name="street" required placeholder="street" spellcheck="false">
-     <p><small class="error"></small></p>
-    </div>
-
-    <div class="form-input">
-     <input type="text" name="stateOfResidence" required placeholder="stateOfResidence" spellcheck="false">
-     <p><small class="error"></small></p>
-    </div>
-
-    <div class="form-input">
-     <input type="text" name="countryOfResidence" required placeholder="countryOfResidence" spellcheck="false">
-     <p><small class="error"></small></p>
-    </div>
-
-    <div class="form-input password-block">
-     <input type="password" name="password" class="password" required placeholder="**********">
-     <button type="button" onclick="togglePassword()">Show</button>
-      <p><small class="error"></small></p>
-    </div>
- 
-    <div class="form-input">
-     <input type="checkbox" name="terms-and-conditions">
-     <span>I have read and agreed to the <a href="">Terms and conditions</a></span>
-    </div>
- 
-    <div class="form-input">
-     <input type="submit" value="Register">
-    </div>
-   </form>
-  </div>
- </div>
-
- <script src="./js/signup.js"></script>
+  <script src="./js/signup.js"></script>
 </body>
+
 </html>

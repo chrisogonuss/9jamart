@@ -2,60 +2,63 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Start Selling</title>
- <!-- style css -->
- <link rel="stylesheet" href="./css/startSelling,css/startSelling.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Selling</title>
+  <!-- favicon -->
+  <link rel="icon" href="./assets/favicon.ico/download-removebg-preview.png" type="image/x-icon" />
+  <!-- style css -->
+  <link rel="stylesheet" href="./css/startSelling,css/startSelling.css">
 </head>
 
 <body>
- <div class="form-flex">
-  <div>
-   <h1>Join Redbubble</h1>
-   <p><small>Sign up as a customer for 20% off your first order. Your coupon will be emailed after sign up.</small></p>
+  <div class="form-flex">
+    <div>
+      <h1>Join Redbubble</h1>
+      <p><small>Sign up as a customer for 20% off your first order. Your coupon will be emailed after sign up.</small>
+      </p>
+    </div>
+    <div>
+      <form method="post">
+        <div class="form-input">
+          <input type="email" name="email" required placeholder="Email">
+          <p><small class="error"></small></p>
+        </div>
+
+        <div class="form-input">
+          <input type="username" name="username" required placeholder="Username">
+          <p><small class="error"></small></p>
+        </div>
+
+        <div class="form-input password-block">
+          <input type="password" name="password" class="password" required placeholder="**********">
+          <button type="button" onclick="togglePassword()">Show</button>
+          <p><small class="error"></small></p>
+        </div>
+
+        <div class="form-input">
+          <input type="checkbox" name="offers-and-news">
+          <span>Emails me special offers and artist news</span>
+        </div>
+
+        <div class="form-input">
+          <input type="submit" value="Log in">
+        </div>
+
+        <div class="form-input">
+          <p>Already have an account? <a href="login.html">Log in</a></p>
+        </div>
+
+        <div class="form-input">
+          <span name="terms-and-conditions">By clicking Sign Up, you agree to our <a href="">User Agreement and Privacy
+              Policy</a></span>
+        </div>
+      </form>
+    </div>
   </div>
-  <div>
-   <form method="post">
-    <div class="form-input">
-     <input type="email" name="email" required placeholder="Email">
-     <p><small class="error"></small></p>
-    </div>
 
-    <div class="form-input">
-     <input type="username" name="username" required placeholder="Username">
-     <p><small class="error"></small></p>
-    </div>
 
-    <div class="form-input password-block">
-     <input type="password" name="password" class="password" required placeholder="**********">
-     <button type="button" onclick="togglePassword()">Show</button>
-     <p><small class="error"></small></p>
-    </div>
-
-    <div class="form-input">
-     <input type="checkbox" name="offers-and-news">
-     <span>Emails me special offers and artist news</span>
-    </div>
-
-    <div class="form-input">
-     <input type="submit" value="Log in">
-    </div>
-
-    <div class="form-input">
-     <p>Already have an account? <a href="login.html">Log in</a></p>
-    </div>
-
-    <div class="form-input">
-     <span name="terms-and-conditions">By clicking Sign Up, you agree to our <a href="">User Agreement and Privacy
-       Policy</a></span>
-    </div>
-   </form>
-  </div>
- </div>
-
- 
- <script src="./js/startSelling.js"></script>
+  <script src="./js/startSelling.js"></script>
 </body>
 
 </html>
